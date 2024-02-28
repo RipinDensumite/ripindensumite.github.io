@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="Ripin Densumite">
+  <Header />
+  <main class="h-screen flex flex-col items-center text-white bg-gray-700">
+    <section class="m-10">
+      <div class="flex-shrink-0 group block">
+        <div class="flex items-center">
+          <img
+            class="inline-block flex-shrink-0 size-[100px] rounded-full"
+            src="https://avatars.githubusercontent.com/u/110036461?v=4"
+            alt="Image Description"
+          />
+          <div class="ms-3">
+            <h3 class="font-semibold text-white-800">Ripin Densumite</h3>
+            <p class="text-sm font-medium text-gray-400">
+              arifindensumite@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="flex flex-col sm:inline-flex sm:flex-row rounded-sm shadow-sm"
+      >
+        <button
+          onclick="window.location.href = 'https://www.facebook.com/ripin.densumite';"
+          type="button"
+          class="py-3 px-4 inline-flex items-center gap-x-2 -mt-px -ms-px first:rounded-t-md last:rounded-b-md sm:first:rounded-s-md sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-md text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+        >
+          Facebook
+        </button>
+        <button
+          onclick="window.location.href = 'https://www.instagram.com/ripin_densumite/';"
+          type="button"
+          class="py-3 px-4 inline-flex items-center gap-x-2 -mt-px -ms-px first:rounded-t-md last:rounded-b-md sm:first:rounded-s-md sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-md text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+        >
+          Instagram
+        </button>
+        <button
+          onclick="window.location.href = 'https://github.com/arifindensumite';"
+          type="button"
+          class="py-3 px-4 inline-flex items-center gap-x-2 -mt-px -ms-px first:rounded-t-md last:rounded-b-md sm:first:rounded-s-md sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-md text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+        >
+          Github
+        </button>
+      </div>
+    </section>
+  </main>
+</Layout>
