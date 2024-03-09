@@ -1,16 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Button from "../components/Button.svelte";
+import Navbar from "../components/Navbar.svelte";
+import About from "../components/About.svelte";
 ---
 
 <Layout title="Ripin Densumite">
-  <div class="h-screen flex flex-col items-center justify-center">
-    <h1
-      class="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
-    >
-      Under construction
-    </h1>
-    <Button client:load />
-  </div>
+  <Navbar />
+  <About client:load/>
 </Layout>
