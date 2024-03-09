@@ -12,8 +12,8 @@
       <a href="/">Ripin</a>
     </div>
     <div class="font-semibold flex items-center gap-8">
-      <a>O</a>
-      <a>XD</a>
+      <a href="">O</a>
+      <a href="">XD</a>
     </div>
   </div>
 </nav>
