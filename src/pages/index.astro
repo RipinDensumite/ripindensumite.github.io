@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.svelte";
-import About from "../components/About.svelte";
+import About from "../components/About.astro";
 ---
 
 <Layout title="Ripin Densumite">
   <Navbar />
-  <About client:load/>
+  <About />
 </Layout>
