@@ -2,18 +2,19 @@
   let name = "Hello World";
 </script>
 
-<nav
-  class="bg-gray-400 w-full z-[100] fixed top-0 h-20 flex items-center transition duration-[400ms] ease-in-out"
->
-  <div
-    class="px-6 container mx-auto overflow-hidden flex justify-between items-center"
+<div class="flex items-center justify-center">
+  <nav
+    class="bg-gray-400 w-[90%] h-10 z-[100] mt-5 fixed top-0 flex items-center transition duration-[400ms] ease-in-out rounded-full"
   >
-    <div class="text-xl md:text-2xl uppercase font-bold">
-      <a href="/">Ripin</a>
+    <div
+      class="px-6 container mx-auto overflow-hidden flex justify-between items-center"
+    >
+      <div class="text-xl md:text-2xl uppercase font-bold">
+        <a href="/">Ripin</a>
+      </div>
+      <div class="font-semibold flex items-center gap-8">
+        <a href="">About</a>
+      </div>
     </div>
-    <div class="font-semibold flex items-center gap-8">
-      <a href="">O</a>
-      <a href="">XD</a>
-    </div>
-  </div>
-</nav>
+  </nav>
+</div>
