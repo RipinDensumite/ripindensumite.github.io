@@ -1,5 +1,5 @@
 {
-  "name": "RipinPortfolio",
+  "name": "short-solstice",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,14 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.5",
+    "@astrojs/check": "^0.5.10",
     "@astrojs/svelte": "^5.2.0",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.4.4",
-    "daisyui": "^4.7.2",
+    "astro": "^4.5.12",
+    "daisyui": "^4.9.0",
     "svelte": "^4.2.12",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
-  },
-  "devDependencies": {}
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.3"
+  }
 }
