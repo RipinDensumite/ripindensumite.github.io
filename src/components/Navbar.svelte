@@ -13,7 +13,7 @@
         <a href="/">Ripin</a>
       </div>
       <div class="font-semibold flex items-center gap-8">
-        <a href="">About</a>
+        <a href="/">About</a>
       </div>
     </div>
   </nav>
