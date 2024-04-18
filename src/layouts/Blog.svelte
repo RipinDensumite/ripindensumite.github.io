@@ -1,6 +1,5 @@
 <script>
   import Card from "../components/Card.svelte";
-  let names = ["Error 1", "Error 2", "Error 3"];
 
   // Create an array of blog post objects
   let blogPosts = [
@@ -26,7 +25,7 @@
 <section class="py-4 border-t-2">
   <h1 class="font-mono text-center">Blog</h1>
   <div class="flex flex-wrap justify-center gap-4">
-    {#if names.length > 0}
+    {#if blogPosts.length > 0}
       {#each blogPosts as post, index}
         <Card
           title={post.title}
