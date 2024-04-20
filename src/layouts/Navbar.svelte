@@ -1,4 +1,4 @@
-<div class="navbar bg-base-100 border-b-2 sticky top-0 z-20">
+<div class="navbar bg-base-100 border-y-2 sticky top-0 z-20">
   <!--Logo-->
   <div class="flex-1">
     <a href="/" class="btn btn-ghost text-xl">Ripin</a>
