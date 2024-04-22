@@ -3,22 +3,22 @@
 
   // Create an array of blog post objects
   let blogPosts = [
-    {
-      title: "Blog Post 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      link: "/blog/post-1",
-    },
-    {
-      title: "Blog Post 2",
-      description:
-        "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-      link: "/blog/post-2",
-    },
-    {
-      title: "Blog Post 3",
-      description: "Nulla facilisi. Donec sed ex eget orci lacinia tincidunt.",
-      link: "/blog/post-3",
-    },
+    // {
+    //   title: "Blog Post 1",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //   link: "/blog/post-1",
+    // },
+    // {
+    //   title: "Blog Post 2",
+    //   description:
+    //     "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    //   link: "/blog/post-2",
+    // },
+    // {
+    //   title: "Blog Post 3",
+    //   description: "Nulla facilisi. Donec sed ex eget orci lacinia tincidunt.",
+    //   link: "/blog/post-3",
+    // },
   ];
 </script>
 

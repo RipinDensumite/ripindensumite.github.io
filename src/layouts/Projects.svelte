@@ -3,16 +3,16 @@
 
   // Create an array of project posts objects
   let projectPosts = [
-    {
-      title: "Project post 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      link: "/project/post-1",
-    },
-    {
-      title: "Project post 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      link: "/project/post-2",
-    },
+    // {
+    //   title: "Project post 1",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //   link: "/project/post-1",
+    // },
+    // {
+    //   title: "Project post 2",
+    //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //   link: "/project/post-2",
+    // },
   ];
 </script>
 
