@@ -1,5 +1,5 @@
 ---
-
+import { Image } from 'astro:assets';
 ---
 
 <section class="py-4">
@@ -7,7 +7,7 @@
     <div class="basis-1/4 mx-2">
       <div class="avatar">
         <div class="w-40 h-40 sm:w-64 sm:h-64 rounded-full">
-          <img src="https://avatars.githubusercontent.com/u/52118329?v=4" />
+          <Image src="https://avatars.githubusercontent.com/u/52118329?v=4" alt="A userProfile" width={10} height={10} decoding="async" />
         </div>
       </div>
     </div>
