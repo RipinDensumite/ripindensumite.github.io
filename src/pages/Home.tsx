@@ -64,7 +64,7 @@ export default function Home() {
                             <p>nothing to see yet... nothing to see yet... nothing to see yet... nothing to see yet... nothing to see yet... nothing to see yet...</p>
                         </CardContent>
                         <CardFooter className="flex flex-row gap-1 justify-end">
-                            {navCardFooter.map((item, index) => (
+                            {navCardFooter.map((item) => (
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger asChild>
