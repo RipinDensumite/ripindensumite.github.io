@@ -8,7 +8,7 @@ import ContactModule from './modules/contact'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-800 font-mono p-8">
+    <div className="min-h-screen bg-white text-gray-800 font-mono p-8 overflow-auto">
       <NavBarLayout />
 
       <main className="max-w-2xl mx-auto space-y-16">
