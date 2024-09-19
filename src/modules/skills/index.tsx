@@ -10,6 +10,7 @@ export default function SkillsModule() {
                 <li>Git / GitHub</li>
                 <li>Docker</li>
                 <li>Linux</li>
+                <li>Windows</li>
                 <li>SQL / NoSQL Databases</li>
             </ul>
         </section>
