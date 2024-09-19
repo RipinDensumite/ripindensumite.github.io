@@ -1,4 +1,3 @@
-import './App.css'
 import NavBarLayout from './layout/navbar'
 import AboutModule from './modules/about'
 import SkillsModule from './modules/skills'
