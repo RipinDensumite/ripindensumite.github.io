@@ -5,9 +5,11 @@ export default function SkillsModule() {
             <ul className="list-disc list-inside">
                 <li>JavaScript / TypeScript</li>
                 <li>React.js / Next.js</li>
-                <li>Node.js / Express.js</li>
+                <li>Node.js</li>
                 <li>HTML5 / CSS3 / Tailwind CSS</li>
                 <li>Git / GitHub</li>
+                <li>Docker</li>
+                <li>Linux</li>
                 <li>SQL / NoSQL Databases</li>
             </ul>
         </section>
