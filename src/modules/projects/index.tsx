@@ -1,21 +1,34 @@
 export default function ProjectsModule() {
+
+    const projects = [
+        {
+            name: "Marketing And Management System",
+            description: "",
+            techStack: ["Next.js", "Pocketbase", "Tailwind CSS"],
+            url: "Project URL"
+        },
+        {
+            name: "SWEspace",
+            description: "",
+            techStack: ["Vite", "React", "Tailwind CSS"],
+            url: "Project URL"
+        }
+    ]
+
     return (
         <section id="projects">
             <h2 className="text-2xl font-bold mb-4">PROJECTS</h2>
             <div className="space-y-4">
-                <div>
-                    <h3 className="font-bold">Project 1: [Project Name]</h3>
-                    <p>[Brief description of the project and your role]</p>
-                    <p>Tech stack: [List of technologies used]</p>
-                    <a href="[Project URL]" className="underline">View Project</a>
-                </div>
-                <div>
-                    <h3 className="font-bold">Project 2: [Project Name]</h3>
-                    <p>[Brief description of the project and your role]</p>
-                    <p>Tech stack: [List of technologies used]</p>
-                    <a href="[Project URL]" className="underline">View Project</a>
-                </div>
-                {/* Add more projects as needed */}
+                {
+                    projects.map((project, index) => (
+                        <div key={index} className="border p-5">
+                            <h3 className="font-bold">{project.name}</h3>
+                            <p>{project.description}</p>
+                            <p>Tech stack: {project.techStack.join(", ")}</p>
+                            <a href={project.url} className="underline">View Project</a>
+                        </div>
+                    ))
+                }
             </div>
         </section>
     )
