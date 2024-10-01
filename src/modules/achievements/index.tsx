@@ -28,12 +28,12 @@ export default function AchievementsModule() {
                                 <span>{achievement.title}</span>
                                 <span className="flex items-center gap-2"><CalendarDays className="w-4 h-4" />{achievement.date}</span>
                             </div>
-                            <a
+                            {/* <a
                                 className="inline-block rounded border border-black bg-black px-3 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-black focus:outline-none focus:ring active:text-black"
                                 href="#"
                             >
                                 View
-                            </a>
+                            </a> */}
                         </li>
                     ))
                 }
