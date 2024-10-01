@@ -17,24 +17,24 @@ export default function ProjectsModule() {
     const projects = [
         {
             name: "Marketing And Management System",
-            description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-            techStack: ["Next.js", "Pocketbase", "Tailwind CSS", "Docker"],
+            description: "",
+            techStack: ["Next.js", "React", "Tailwind CSS", "Pocketbase", "Docker"],
             url: "https://mams.site/",
             status: "live"
         },
         {
             name: "SWEspace",
-            description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+            description: "",
             techStack: ["Vite", "React", "Tailwind CSS"],
             url: "https://swespace.vercel.app/",
             status: "live"
         },
         {
             name: "PharmaGains",
-            description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+            description: "",
             techStack: ["PHP", "MySQL"],
-            url: "https://github.com/RipinDensumite/PharmaGains",
-            status: "offline"
+            url: "https://pharmagains.ripin.live/",
+            status: "live"
         }
     ]
 
