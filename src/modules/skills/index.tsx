@@ -7,11 +7,12 @@ export default function SkillsModule() {
                 <li>React.js / Next.js</li>
                 <li>Node.js</li>
                 <li>HTML5 / CSS3 / Tailwind CSS</li>
+                <li>PHP</li>
                 <li>Git / GitHub</li>
                 <li>Docker</li>
                 <li>Linux</li>
                 <li>Windows</li>
-                <li>SQL / NoSQL Databases</li>
+                <li>SQL</li>
             </ul>
         </section>
     )
