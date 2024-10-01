@@ -5,6 +5,7 @@ import AchievementsModule from './modules/achievements'
 import QualificationsModule from './modules/qualifications'
 import ProjectsModule from './modules/projects'
 import ContactModule from './modules/contact'
+import { TextFade } from './components/text animation/TextFade'
 
 function App() {
   return (
@@ -12,12 +13,24 @@ function App() {
       <NavBarLayout />
 
       <main className="max-w-2xl mx-auto space-y-16">
-        <AboutModule />
-        <SkillsModule />
-        <AchievementsModule />
-        <QualificationsModule />
-        <ProjectsModule />
-        <ContactModule />
+        <TextFade direction="up">
+          <AboutModule />
+        </TextFade>
+        <TextFade direction="up">
+          <SkillsModule />
+        </TextFade>
+        <TextFade direction="up">
+          <AchievementsModule />
+        </TextFade>
+        <TextFade direction="up">
+          <QualificationsModule />
+        </TextFade>
+        <TextFade direction="up">
+          <ProjectsModule />
+        </TextFade>
+        <TextFade direction="up">
+          <ContactModule />
+        </TextFade>
       </main>
 
       <footer className="mt-16 text-center text-sm text-gray-500">
