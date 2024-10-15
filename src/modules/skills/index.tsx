@@ -6,8 +6,10 @@ export default function SkillsModule() {
                 <li>JavaScript / TypeScript</li>
                 <li>React.js / Next.js</li>
                 <li>Node.js</li>
-                <li>HTML5 / CSS3 / Tailwind CSS</li>
+                <li>HTML / CSS3 / Tailwind CSS</li>
                 <li>PHP</li>
+                <li>C</li>
+                <li>JAVA</li>
                 <li>Git / GitHub</li>
                 <li>Docker</li>
                 <li>Linux</li>
