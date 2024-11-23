@@ -19,7 +19,7 @@ export default function AboutModule() {
                     <div className="col-span-2">
                         <p className="text-sm text-gray-800"><strong>User description:</strong></p>
                         <p className="text-sm">
-                            passionate about creating efficient, user-friendly web applications and always eager to learn new technologies.
+                            passionate about creating efficient, user-friendly solutions across web applications, software, and innovative technologies. Always eager to learn new technologies and tools to create impactful and innovative projects.
                         </p>
                     </div>
                     <div className="col-span-2 ml-auto space-x-1">
