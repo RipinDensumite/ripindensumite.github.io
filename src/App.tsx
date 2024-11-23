@@ -9,7 +9,7 @@ import { TextFade } from './components/text animation/TextFade'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-800 font-mono p-8 overflow-auto">
+    <div className="min-h-screen bg-white text-gray-800 font-mono p-8 overflow-auto bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
       <NavBarLayout />
 
       <main className="max-w-2xl mx-auto space-y-16">
