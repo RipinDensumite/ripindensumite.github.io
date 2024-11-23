@@ -1,5 +1,5 @@
 import { IconType } from 'react-icons';
-import { SiNextdotjs, SiTailwindcss, SiVite, SiPocketbase, SiReact, SiDocker, SiMysql, SiPhp } from 'react-icons/si';
+import { SiNextdotjs, SiTailwindcss, SiVite, SiPocketbase, SiReact, SiDocker, SiMysql, SiPhp, SiC } from 'react-icons/si';
 
 const techStackIcons: { [key: string]: IconType } = {
     'Next.js': SiNextdotjs,
@@ -9,7 +9,8 @@ const techStackIcons: { [key: string]: IconType } = {
     'Vite': SiVite,
     'Pocketbase': SiPocketbase,
     'MySQL': SiMysql,
-    'PHP': SiPhp
+    'PHP': SiPhp,
+    'C': SiC
 };
 
 export default function ProjectsModule() {
@@ -18,23 +19,33 @@ export default function ProjectsModule() {
         {
             name: "Marketing And Management System",
             description: "",
-            techStack: ["Next.js", "React", "Tailwind CSS", "Pocketbase", "Docker"],
+            techStack: ["Next.js", "React.js", "Tailwind CSS", "Pocketbase", "Docker"],
             url: "https://mams.site/",
-            status: "live"
+            status: "live",
+            isWorkingOn: true
         },
-        {
-            name: "SWEspace",
-            description: "",
-            techStack: ["Vite", "React", "Tailwind CSS"],
-            url: "https://swespace.vercel.app/",
-            status: "live"
-        },
+        // {
+        //     name: "SWEspace",
+        //     description: "",
+        //     techStack: ["Vite", "React.js", "Tailwind CSS"],
+        //     url: "https://swespace.vercel.app/",
+        //     status: "live"
+        // },
         {
             name: "PharmaGains",
             description: "",
             techStack: ["PHP", "MySQL"],
             url: "https://pharmagains.ripin.live/",
-            status: "live"
+            status: "live",
+            isWorkingOn: false
+        },
+        {
+            name: "KUDO QUIZ",
+            description: "",
+            techStack: ["C"],
+            url: "https://github.com/RipinDensumite/KUDO-QUIZ",
+            status: "",
+            isWorkingOn: false
         }
     ]
 
@@ -44,10 +55,25 @@ export default function ProjectsModule() {
             <div className="space-y-4">
                 {
                     projects.map((project, index) => (
-                        <main key={index} className="border-2 rounded-md border-gray-800 p-5 flex flex-row justify-between">
+                        <a
+                            onClick={() => window.open(project.url, "_blank")}
+                            key={index}
+                            className="bg-slate-50 border-2 rounded-md border-gray-800 p-5 flex flex-row justify-between transition-transform duration-300 hover:scale-105"
+                        >
                             <section>
-                                <h3 className="font-bold">{project.name}</h3>
-                                <p>{project.description}</p>
+                                <h3 className="font-bold text-slate-800 flex items-center">
+                                    {project.name}
+                                    {project.isWorkingOn && (
+                                        <span className="ml-2 flex items-center">
+                                            <span className="relative flex h-3 w-3">
+                                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                                            </span>
+                                            <span className="ml-2 text-sm text-green-700">Working on</span>
+                                        </span>
+                                    )}
+                                </h3>
+                                <p className='text-slate-600 text-md'>{project.description}</p>
                                 <div className=' gap-2 items-center mt-2 mb-2'>
                                     <span className='w-28'>Tech stack</span>
                                     <div>
@@ -66,7 +92,7 @@ export default function ProjectsModule() {
                             </section>
                             {project.status === "live" && <span className="bg-emerald-100 px-2.5 py-0.5 border-2 border-emerald-700 text-emerald-700 h-fit">live</span>}
                             {project.status === "offline" && <span className="bg-red-100 px-2.5 py-0.5 border-2 border-red-700 text-red-700 h-fit">offline</span>}
-                        </main>
+                        </a>
                     ))
                 }
             </div>
