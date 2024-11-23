@@ -2,7 +2,7 @@ export default function AboutModule() {
     return (
         <section id="about">
             {/* <h2 className="text-2xl font-bold mb-4">ABOUT ME</h2> */}
-            <div className="max-w-xl mx-auto bg-white border border-gray-300 rounded-lg shadow-lg p-6">
+            <div className="max-w-xl mx-auto border border-gray-300 rounded-lg shadow-lg p-6 bg-gradient-to-br from-slate-50 to-slate-200">
                 <h1 className="mb-3 text-center sm:block sm:text-left font-bold text-2xl">:MeCard:</h1>
                 <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4">
                     <div className="max-w-52 max-h-52 sm:size-24 mb-4 sm:mb-0">
