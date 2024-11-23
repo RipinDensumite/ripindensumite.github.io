@@ -22,9 +22,9 @@ function App() {
         <TextFade direction="up">
           <AchievementsModule />
         </TextFade>
-        <TextFade direction="up">
+        {/* <TextFade direction="up">
           <QualificationsModule />
-        </TextFade>
+        </TextFade> */}
         <TextFade direction="up">
           <ProjectsModule />
         </TextFade>
