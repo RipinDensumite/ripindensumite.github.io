@@ -3,7 +3,7 @@ import { SiNextdotjs, SiTailwindcss, SiVite, SiPocketbase, SiReact, SiDocker, Si
 
 const techStackIcons: { [key: string]: IconType } = {
     'Next.js': SiNextdotjs,
-    'React': SiReact,
+    'React.js': SiReact,
     'Tailwind CSS': SiTailwindcss,
     'Docker': SiDocker,
     'Vite': SiVite,
@@ -18,7 +18,7 @@ export default function ProjectsModule() {
     const projects = [
         {
             name: "Marketing And Management System",
-            description: "",
+            description: "Web-based marketing and management system to streamline marketing efforts for staff and enhancing their ability to attract visitors and access materials efficiently.",
             techStack: ["Next.js", "React.js", "Tailwind CSS", "Pocketbase", "Docker"],
             url: "https://mams.site/",
             status: "live",
@@ -33,7 +33,7 @@ export default function ProjectsModule() {
         // },
         {
             name: "PharmaGains",
-            description: "",
+            description: "Simple shopping cart system made during web development course.",
             techStack: ["PHP", "MySQL"],
             url: "https://pharmagains.ripin.live/",
             status: "live",
@@ -41,7 +41,7 @@ export default function ProjectsModule() {
         },
         {
             name: "KUDO QUIZ",
-            description: "",
+            description: "An interactive quiz application in C featuring user authentication, administrative controls for quiz management, and automated scoring system.",
             techStack: ["C"],
             url: "https://github.com/RipinDensumite/KUDO-QUIZ",
             status: "",
