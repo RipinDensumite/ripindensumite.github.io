@@ -55,10 +55,9 @@ export default function ProjectsModule() {
             <div className="space-y-4">
                 {
                     projects.map((project, index) => (
-                        <a
-                            onClick={() => window.open(project.url, "_blank")}
+                        <div
                             key={index}
-                            className="bg-slate-50 border-2 rounded-md border-gray-800 p-5 flex flex-row justify-between transition-transform duration-300 hover:scale-105"
+                            className="bg-slate-50 border-2 rounded-md border-gray-800 p-5 flex flex-row justify-between transition-transform duration-300"
                         >
                             <section>
                                 <h3 className="font-bold text-slate-800 flex items-center">
@@ -73,7 +72,7 @@ export default function ProjectsModule() {
                                         </span>
                                     )}
                                 </h3>
-                                <p className='text-slate-600 text-md'>{project.description}</p>
+                                <p className='text-slate-600 text-sm'>{project.description}</p>
                                 <div className=' gap-2 items-center mt-2 mb-2'>
                                     <span className='w-28'>Tech stack</span>
                                     <div>
@@ -92,7 +91,7 @@ export default function ProjectsModule() {
                             </section>
                             {project.status === "live" && <span className="bg-emerald-100 px-2.5 py-0.5 border-2 border-emerald-700 text-emerald-700 h-fit">live</span>}
                             {project.status === "offline" && <span className="bg-red-100 px-2.5 py-0.5 border-2 border-red-700 text-red-700 h-fit">offline</span>}
-                        </a>
+                        </div>
                     ))
                 }
             </div>
