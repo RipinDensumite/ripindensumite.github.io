@@ -59,7 +59,7 @@ export default function ProjectsModule() {
                             key={index}
                             className="bg-slate-50 border-2 rounded-md border-gray-800 p-5 flex flex-row justify-between transition-transform duration-300"
                         >
-                            <section>
+                            <section className='w-full'>
                                 <div className='flex items-center justify-between'>
                                     <h3 className="font-bold text-slate-800 flex items-center">
                                         {project.name}
@@ -91,7 +91,11 @@ export default function ProjectsModule() {
                                         })}
                                     </div>
                                 </div>
-                                <a href={project.url} className="underline">View Project</a>
+                                <div className='ml-auto w-max'>
+                                    <button onClick={() => window.location.href = project.url} className="rounded-md border-2 border-dashed border-black bg-slate-50 px-4 py-2 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+                                        View Project
+                                    </button>
+                                </div>
                             </section>
                         </div>
                     ))
