@@ -11,10 +11,10 @@ export default function AchievementsModule() {
             title: "WorldSkills Malaysia Belia (WSMB) 2023 - IT Software Solution for Business, Pre-Qualification Stage",
             date: "10 May 2023"
         },
-        {
-            title: "Cisco Networking Academy: IT Essentials: PC Hardware and Software",
-            date: "18 January 2023"
-        }
+        // {
+        //     title: "Cisco Networking Academy: IT Essentials: PC Hardware and Software",
+        //     date: "18 January 2023"
+        // }
     ]
 
     return (
