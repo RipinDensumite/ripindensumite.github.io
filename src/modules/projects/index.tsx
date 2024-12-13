@@ -1,5 +1,6 @@
 import { IconType } from 'react-icons';
 import { SiNextdotjs, SiTailwindcss, SiVite, SiPocketbase, SiReact, SiDocker, SiMysql, SiPhp, SiC } from 'react-icons/si';
+import { projectsData } from '../../data/project';
 
 const techStackIcons: { [key: string]: IconType } = {
     'Next.js': SiNextdotjs,
@@ -15,46 +16,12 @@ const techStackIcons: { [key: string]: IconType } = {
 
 export default function ProjectsModule() {
 
-    const projects = [
-        {
-            name: "Marketing And Management System",
-            description: "Web-based marketing and management system to streamline marketing efforts for staff and enhancing their ability to attract visitors and access materials efficiently.",
-            techStack: ["Next.js", "React.js", "Tailwind CSS", "Pocketbase", "Docker"],
-            url: "https://mams.site/",
-            status: "",
-            isWorkingOn: true
-        },
-        // {
-        //     name: "SWEspace",
-        //     description: "",
-        //     techStack: ["Vite", "React.js", "Tailwind CSS"],
-        //     url: "https://swespace.vercel.app/",
-        //     status: "live"
-        // },
-        {
-            name: "PharmaGains",
-            description: "Simple shopping cart system made during web development course.",
-            techStack: ["PHP", "MySQL"],
-            url: "https://pharmagains.ripin.live/",
-            status: "",
-            isWorkingOn: false
-        },
-        {
-            name: "KUDO QUIZ",
-            description: "An interactive quiz application in C featuring user authentication, administrative controls for quiz management, and automated scoring system.",
-            techStack: ["C"],
-            url: "https://github.com/RipinDensumite/KUDO-QUIZ",
-            status: "",
-            isWorkingOn: false
-        }
-    ]
-
     return (
         <section id="projects">
             <h2 className="text-2xl font-bold mb-4">PROJECTS</h2>
             <div className="space-y-4">
                 {
-                    projects.map((project, index) => (
+                    projectsData.map((project, index) => (
                         <div
                             key={index}
                             className="bg-slate-50 border-2 rounded-md border-gray-800 p-5 flex flex-row justify-between transition-transform duration-300"
