@@ -27,9 +27,11 @@ function App() {
                 <TextFade direction="up">
                     <AchievementsModule />
                 </TextFade>
-                {/* <TextFade direction="up">
-          <QualificationsModule />
-        </TextFade> */}
+                {
+                    /* <TextFade direction="up">
+                        <QualificationsModule />
+                    </TextFade> */
+                }
                 <TextFade direction="up">
                     <ProjectsModule />
                 </TextFade>
