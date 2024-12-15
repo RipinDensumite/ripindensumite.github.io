@@ -6,7 +6,7 @@ export const projectsData = [
     techStack: ["Next.js", "React.js", "Tailwind CSS", "Pocketbase", "Docker"],
     url: "https://mams.site/",
     status: "",
-    isWorkingOn: true,
+    isWorkingOn: false,
   },
   // {
   //     name: "SWEspace",
