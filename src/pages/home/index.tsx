@@ -41,7 +41,7 @@ function App() {
             </main>
 
             <footer className="mt-16 text-center text-sm text-gray-500">
-                © 2024 RipinDensumite :: Aspiring Software Engineer
+                RipinDensumite :: Aspiring Software Engineer
             </footer>
             {/* </section> */}
         </div>
