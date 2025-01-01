@@ -11,7 +11,7 @@ export default function AboutModule() {
                     <div className="flex-1 w-full">
                         <h2 className="text-lg font-semibold">Mohamed Arifin Densumite bin Jamdi</h2>
                         <p className="text-sm text-gray-800"><strong>Alias:</strong> RipinDensumite</p>
-                        <p className="text-sm text-gray-800"><strong>Status:</strong> 3rd Year German-Malaysian Institute Student</p>
+                        <p className="text-sm text-gray-800"><strong>Status:</strong> 3rd Year @ German-Malaysian Institute Student</p>
                         <p className="text-sm text-gray-800"><strong>Nationality:</strong> Malaysian</p>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ export default function AboutModule() {
                         </p>
                     </div>
                     <div className="col-span-2 ml-auto space-x-1">
-                        <button onClick={() => window.open("mailto:marifin.jamdi@student.gmi.edu.my")} className="size-8 hover:bg-zinc-300 transition-all rounded-lg">
+                        <button onClick={() => window.open("mailto:ariffindensumite@gmail.com")} className="size-8 hover:bg-zinc-300 transition-all rounded-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
                                 <path d="M 9 4 C 6.239 4 4 6.239 4 9 L 4 41 C 4 43.761 6.239 46 9 46 L 41 46 C 43.761 46 46 43.761 46 41 L 46 9 C 46 6.239 43.761 4 41 4 L 9 4 z M 11 16 L 39 16 L 39 16.521484 C 38.666397 16.789063 36.290926 18.694589 33.472656 20.960938 C 30.463284 23.380962 27.398547 25.847742 26.855469 26.306641 C 26.150643 26.902215 25.402874 27 25 27 C 24.595959 27 23.851004 26.902714 23.146484 26.306641 C 22.601383 25.845446 19.53673 23.380847 16.527344 20.960938 C 13.70906 18.694696 11.333601 16.789076 11 16.521484 L 11 16 z M 11 19.083984 C 12.001588 19.888112 13.095347 20.766513 15.275391 22.519531 C 16.691354 23.658138 17.187158 24.065728 18.371094 25.021484 L 11 30.917969 L 11 19.083984 z M 39 19.083984 L 39 30.917969 L 31.626953 25.021484 C 32.811211 24.065805 33.308354 23.658432 34.724609 22.519531 C 36.904662 20.766414 37.998415 19.88808 39 19.083984 z M 19.964844 26.308594 C 20.466406 26.715288 21.743306 27.740739 21.853516 27.833984 C 23.006996 28.809911 24.262041 29 25 29 C 25.739126 29 26.991357 28.80841 28.144531 27.833984 C 28.255302 27.740384 29.531503 26.715192 30.033203 26.308594 L 39 33.480469 L 39 34 L 11 34 L 11 33.480469 L 19.964844 26.308594 z"></path>
                             </svg>

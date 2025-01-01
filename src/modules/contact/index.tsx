@@ -5,8 +5,8 @@ export default function ContactModule() {
             <p>You can find me on:</p>
             <ul className="list-disc list-inside">
                 <li>Github: <a href="https://github.com/RipinDensumite/" className="underline">@RipinDensumite</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/arifin-densumite/" className="underline">@arifin-densumite</a></li>
-                <li>Email: <a href="mailto:marifin.jamdi@student.gmi.edu.my" className="underline">marifin.jamdi@student.gmi.edu.my</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/arifin-densumite/" className="underline">arifin densumite</a></li>
+                <li>Email: <a href="mailto:ariffindensumite@gmail.com" className="underline">ariffindensumite@gmail.com</a></li>
             </ul>
         </section>
     )
