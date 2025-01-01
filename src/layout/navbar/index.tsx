@@ -33,7 +33,7 @@ function NavBarLayout() {
         <header className="flex justify-center items-center mb-8 max-w-2xl mx-auto">
             <nav className="overflow-auto text-center cursor-default">
                 <h1>RipinDensumite Portfolio</h1>
-                <p className="text-sm">Last updated: 14 DECEMBER 2024</p>
+                <p className="text-sm">Last updated: <span className="font-bold">2 JANUARY 2025</span></p>
             </nav>
         </header>
     )
