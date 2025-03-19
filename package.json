@@ -3,9 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+"scripts": {
     "dev": "vite",
+    "devb": "bunx --bun vite",
     "build": "tsc -b && vite build",
+    "buildb": "bunx --bun vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
