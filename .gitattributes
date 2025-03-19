@@ -1,0 +1,36 @@
+# Declare files that will always have binary/unchanged data
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.avif binary
+*.bmp binary
+*.tiff binary
+*.psd binary
+*.svg binary
+*.heic binary
+*.jfif binary
+*.pdf binary
+
+# Force Git to maintain specific line endings
+* text=auto eol=lf
+
+# Documents
+*.md text diff
+*.txt text diff
+
+# Source code
+*.js text diff
+*.jsx text diff
+*.ts text diff
+*.tsx text diff
+*.html text diff
+*.css text diff
+*.scss text diff
+*.json text diff
+
+# Force batch scripts to always use CRLF line endings
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
