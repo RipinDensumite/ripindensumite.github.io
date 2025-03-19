@@ -1,35 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@font-face {
-  font-family: "Hack";
+/* add the code bellow */
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .animate-gradient {
+    animation: gradient 8s linear infinite;
+    background-size: 200% 200%;
+  }
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("/fonts/HackDejavu.woff2") format("woff2");
-}
 
-@font-face {
-  font-family: "Hack";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url("/fonts/HackDejavuBold.woff2") format("woff2");
-}
+  background-color: #F5F5F5;
 
-@font-face {
-  font-family: "Hack";
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-  src: url("/fonts/HackDejavuItalic.woff2") format("woff2");
-}
-
-body {
-  @apply font-hack antialiased;
-  @apply flex flex-col;
-  @apply bg-stone-100 dark:bg-stone-900;
-  @apply text-black/50 dark:text-white/65;
-  font-family: "Hack", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
