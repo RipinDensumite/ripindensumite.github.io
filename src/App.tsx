@@ -1,5 +1,5 @@
 import { Routes, Route, HashRouter } from "react-router";
-import HomePage from "./pages/home";
+import ProfilePage from "./pages/profile";
 import WorkPage from "./pages/work";
 import WorkIdPage from "./pages/work/id";
 import WebLogPage from "./pages/weblog";
@@ -15,7 +15,7 @@ function App() {
           path="/"
           element={
             <Layout>
-              <HomePage />
+              <ProfilePage />
             </Layout>
           }
         />

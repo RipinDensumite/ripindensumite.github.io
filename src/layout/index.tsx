@@ -22,7 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const navPath = [
     {
-      name: "Home",
+      name: "Profile",
       href: "/",
     },
     {

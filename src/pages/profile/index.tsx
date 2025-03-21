@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-export default function HomePage() {
+export default function ProfilePage() {
   return (
     <>
       <motion.section
