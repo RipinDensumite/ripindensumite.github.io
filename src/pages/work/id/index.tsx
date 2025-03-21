@@ -33,7 +33,7 @@ export default function WorkIdPage() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3 }}
         onClick={() => navigate("/work")}
-        className="mb-6 flex items-center gap-2 text-gray-400 hover:text-gray-200 transition-colors"
+        className="cursor-pointer mb-6 flex items-center gap-2 text-gray-400 hover:text-gray-200 transition-colors"
       >
         <ArrowLeft size={16} />
         Back to projects
@@ -69,13 +69,6 @@ export default function WorkIdPage() {
             <p className="text-gray-400 mb-8">
               The project you're looking for doesn't exist or has been removed.
             </p>
-            <button
-              onClick={() => navigate("/work")}
-              className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-md flex items-center gap-2 mx-auto"
-            >
-              <ArrowLeft size={16} />
-              Back to projects
-            </button>
           </motion.div>
         ) : (
           <motion.div
