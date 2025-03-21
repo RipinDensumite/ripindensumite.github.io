@@ -30,8 +30,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       href: "/work",
     },
     {
-      name: "Blog",
-      href: "/blog",
+      name: "Web Log",
+      href: "/weblog",
     },
   ];
 
@@ -209,8 +209,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </AnimatePresence>
 
         {/* Desktop Navigation - Keep your existing nav */}
-        <nav className="w-64 max-w-64 hidden md:flex flex-col fixed left-0 top-0 h-full p-6 rounded-r-2xl bg-gradient-to-b from-[#202222] to-[#1a1b1b] text-white border-r border-gray-800/40 shadow-lg">
-          {/* ...existing desktop navigation code... */}
+        <nav className="w-64 max-w-64 hidden md:flex flex-col fixed left-0 top-0 h-full p-6 rounded-r-2xl text-white border-r border-gray-500/30 shadow-lg">
           {/* Profile section */}
           <div className="relative mx-auto mt-6 mb-8">
             {/* <div className="absolute inset-0 bg-gradient-to-r from-gray-500 to-purple-600 rounded-full blur opacity-20 animate-pulse"></div> */}

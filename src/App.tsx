@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import HomePage from "./pages/home";
 import WorkPage from "./pages/work";
-import BlogPage from "./pages/blog";
+import WebLogPage from "./pages/weblog";
 import Layout from "./layout";
 import NonExistPage from "./pages/error";
 
@@ -26,10 +26,10 @@ function App() {
           }
         />
         <Route
-          path="/blog"
+          path="/weblog"
           element={
             <Layout>
-              <BlogPage />
+              <WebLogPage />
             </Layout>
           }
         />

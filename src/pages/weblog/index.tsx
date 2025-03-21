@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Search, Calendar, Clock, Tag } from "lucide-react";
 import { useState } from "react";
 
-export default function BlogPage() {
+export default function WebLogPage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   // Sample blog posts - replace with your actual data
@@ -56,7 +56,7 @@ export default function BlogPage() {
         className="mb-10"
       >
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          My Blog
+          Web Log
         </h1>
         {/* <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent mb-4">
           My Blog
