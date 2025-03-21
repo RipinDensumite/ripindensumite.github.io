@@ -4,7 +4,6 @@ import { Dispatch, SetStateAction, useState } from "react";
 import { NavLink } from "react-router";
 
 // Category filter component with corrected types
-// Category filter component with corrected types
 const CategoryFilter = ({
   categories,
   activeCategory,
@@ -19,7 +18,7 @@ const CategoryFilter = ({
       onClick={() => setActiveCategory(null)}
       className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
         activeCategory === null
-          ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30"
+          ? "bg-slate-600 text-white shadow-lg shadow-slate-500/30"
           : "cursor-pointer bg-gray-800 text-gray-300 hover:bg-gray-700"
       }`}
     >
@@ -31,7 +30,7 @@ const CategoryFilter = ({
         onClick={() => category && setActiveCategory(category)}
         className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
           activeCategory === category
-            ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30"
+            ? "bg-slate-600 text-white shadow-lg shadow-slate-500/30"
             : "cursor-pointer bg-gray-800 text-gray-300 hover:bg-gray-700"
         }`}
       >
@@ -64,21 +63,21 @@ export function Card({
           loading="lazy"
         />
         {category && (
-          <span className="absolute top-3 right-3 bg-blue-600 text-xs font-semibold px-2.5 py-1 rounded-full text-white shadow-md">
+          <span className="absolute top-3 right-3 bg-slate-600 text-xs font-semibold px-2.5 py-1 rounded-full text-white shadow-md">
             {category}
           </span>
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       <div className="p-5 flex flex-col h-[calc(100%-12rem)]">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-200 group-hover:text-blue-400 transition-colors">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-200 group-hover:text-slate-400 transition-colors">
           {title}
         </h5>
         <p className="mb-4 font-normal text-gray-400 flex-grow line-clamp-3">
           {description}
         </p>
         <div className="mt-auto">
-          <span className="inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300 group-hover:translate-x-1 transition-transform">
+          <span className="inline-flex items-center text-sm font-medium text-slate-400 hover:text-slate-300 group-hover:translate-x-1 transition-transform">
             View Project
             <svg
               className="w-4 h-4 ml-1"
@@ -101,7 +100,6 @@ export function Card({
   return (
     <motion.div
       whileHover={{ y: -8 }}
-      transition={{ type: "spring", stiffness: 300 }}
       className="bg-[#202222] border border-gray-700 rounded-lg shadow-lg hover:shadow-xl hover:border-gray-500 transition-all duration-300 ease-in-out h-full group"
     >
       {link ? (
@@ -183,7 +181,7 @@ export default function WorkPage() {
           </div>
           <input
             type="search"
-            className="block w-full p-2.5 pl-10 text-sm rounded-lg bg-gray-800 border border-gray-700 text-white focus:ring-blue-500 focus:border-blue-500"
+            className="block w-full p-2.5 pl-10 text-sm rounded-lg bg-gray-800 border border-gray-700 text-white focus:ring-slate-500 focus:border-slate-500"
             placeholder="Search projects..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -241,7 +239,7 @@ export default function WorkPage() {
               setActiveCategory(null);
               setSearchQuery("");
             }}
-            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+            className="mt-4 px-4 py-2 bg-slate-600 text-white rounded-md hover:bg-slate-700"
           >
             Reset filters
           </button>
