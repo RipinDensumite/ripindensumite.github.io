@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { Routes, Route, HashRouter } from "react-router";
 import HomePage from "./pages/home";
 import WorkPage from "./pages/work";
 import WorkIdPage from "./pages/work/id";
@@ -9,7 +9,7 @@ import NonExistPage from "./pages/error";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -53,7 +53,7 @@ function App() {
         />
         <Route path="*" element={<NonExistPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
