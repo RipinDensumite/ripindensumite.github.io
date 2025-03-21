@@ -43,16 +43,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <section className="relative min-h-[100dvh] bg-[#202222]">
       <div className="flex flex-row">
-        {/* Mobile Menu Button */}
-        <motion.button
-          onClick={() => setMobileMenuOpen(true)}
-          whileTap={{ scale: 0.9 }}
-          className="fixed top-4 left-4 z-40 md:hidden bg-[#1a1b1b] p-2 rounded-md shadow-md border border-gray-800/40"
-          aria-label="Open menu"
-        >
-          <Menu className="w-6 h-6 text-gray-200" />
-        </motion.button>
-
         {/* Mobile Navigation Menu */}
         <AnimatePresence>
           {mobileMenuOpen && (
@@ -431,12 +421,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </nav>
 
         <div className="min-h-[100dvh] md:pl-64 md:mx-3 w-full flex items-center justify-center">
-          <div className="bg-[#191a1a] rounded-xl min-h-[100dvh] md:min-h-[98dvh] md:max-h-[98dvh] w-full md:border-2 border-[#434343] overflow-y-scroll">
-            <div className="sticky flex items-center top-0 left-0 right-0 h-16 rounded-t-xl bg-[#191a1a] border-b-2 border-[#2b2d2d] z-10">
+          <div className="bg-[#191a1a] rounded-xl min-h-[100dvh] md:min-h-[98dvh] md:max-h-[98dvh] w-full md:border-2 border-[#434343] overflow-y-scroll overflow-x-hidden">
+            <nav className="fixed md:sticky flex items-center top-0 left-0 right-0 h-16 rounded-t-xl bg-[#191a1a] border-b-2 border-[#2b2d2d] z-10">
+              {/* Mobile Menu Button */}
+              <motion.button
+                onClick={() => setMobileMenuOpen(true)}
+                whileTap={{ scale: 0.9 }}
+                className="md:hidden ml-3 bg-[#1a1b1b] p-2 rounded-md shadow-md border border-gray-800/40"
+                aria-label="Open menu"
+              >
+                <Menu className="w-6 h-6 text-gray-200" />
+              </motion.button>
               <AnimatePresence mode="wait">
                 <motion.div
                   key={location.pathname}
-                  className="flex items-center ml-16 md:ml-5 gap-3"
+                  className="flex items-center ml-3 md:ml-5 gap-3"
                 >
                   <motion.div
                     initial={{ scaleY: 0, opacity: 0 }}
@@ -470,7 +469,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </motion.h1>
                 </motion.div>
               </AnimatePresence>
-            </div>
+            </nav>
             <AnimatePresence mode="wait">
               <motion.main
                 key={location.pathname}
@@ -500,13 +499,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     ease: "easeInOut",
                   },
                 }}
-                className="h-full relative"
+                className="h-full"
               >
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.15, duration: 0.3 }}
-                  className="w-full h-full"
+                  className="w-full h-full mt-16 md:mt-0"
                 >
                   {children}
                 </motion.div>
