@@ -21,12 +21,12 @@ export const projects: ProjectType[] = [
     fullDescription:
       "A comprehensive web-based marketing and management system designed to streamline marketing efforts for staff, enhancing their ability to attract visitors and access materials efficiently. The system includes user authentication, role-based access control, and a dashboard for monitoring marketing metrics.",
     imgSrc:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?fm=jpg&q=80&w=3000",
+      "/work/mams.png",
     link: "https://mams.site/",
-    github: "https://github.com/RipinDensumite/mams",
+    github: "",
     category: "Web Application",
-    technologies: ["Next.js", "React", "Tailwind CSS", "Node.js", "MongoDB"],
-    year: "2023",
+    technologies: ["Next.js", "React", "Tailwind CSS", "Node.js", "Pocketbase"],
+    year: "2024",
   },
   {
     id: 2,
@@ -36,12 +36,12 @@ export const projects: ProjectType[] = [
     fullDescription:
       "A shopping cart system developed as part of a web development course. Features user authentication, product management, shopping cart functionality, and checkout process. The system allows users to browse products, add them to cart, and complete purchases.",
     imgSrc:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?fm=jpg&q=80&w=3000",
+      "/work/pharmagains.png",
     link: "",
     github: "https://github.com/RipinDensumite/PharmaGains",
     category: "Web Application",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    year: "2022",
+    technologies: ["HTML", "CSS", "PHP", "MySQL", "XAMP"],
+    year: "2024",
   },
   {
     id: 3,
@@ -51,11 +51,11 @@ export const projects: ProjectType[] = [
     fullDescription:
       "An interactive quiz application developed in C, featuring user authentication, administrative controls for quiz management, and an automated scoring system. The application allows users to take quizzes on various topics, tracks their scores, and provides feedback on performance.",
     imgSrc:
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?fm=jpg&q=80&w=3000",
+      "/work/kudo-quiz.png",
     link: "",
     github: "https://github.com/RipinDensumite/KUDO-QUIZ",
     category: "Terminal Software",
     technologies: ["C", "File I/O", "Data Structures"],
-    year: "2021",
+    year: "2022",
   },
 ];
