@@ -7,7 +7,7 @@ export default function HomePage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="p-5"
+        className="px-6 md:px-10 py-8 max-w-5xl mx-auto"
       >
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-200 mb-6">
           About Me
