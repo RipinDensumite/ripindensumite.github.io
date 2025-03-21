@@ -148,11 +148,11 @@ export default function WorkPage() {
         transition={{ duration: 0.5 }}
         className="mb-10"
       >
-        <h1 className="text-4xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
           My Work
         </h1>
         <p className="text-lg text-gray-300 max-w-2xl">
-          Selected projects from 2021 to 2024 showcasing my skills and
+          Selected projects from 2022 to 2025 showcasing my skills and
           experience.
         </p>
       </motion.div>
