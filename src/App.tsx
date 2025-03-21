@@ -3,6 +3,7 @@ import HomePage from "./pages/home";
 import WorkPage from "./pages/work";
 import WorkIdPage from "./pages/work/id";
 import WebLogPage from "./pages/weblog";
+import WebLogIdPage from "./pages/weblog/id";
 import Layout from "./layout";
 import NonExistPage from "./pages/error";
 
@@ -39,6 +40,14 @@ function App() {
           element={
             <Layout>
               <WebLogPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/weblog/:id"
+          element={
+            <Layout>
+              <WebLogIdPage />
             </Layout>
           }
         />

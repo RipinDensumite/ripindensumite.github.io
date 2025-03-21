@@ -1,8 +1,10 @@
 import { motion } from "motion/react";
 import { Search, Calendar, Clock, Tag } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 export default function WebLogPage() {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
 
   // Sample blog posts - replace with your actual data
@@ -104,7 +106,8 @@ export default function WebLogPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.1 * index }}
-              className="bg-[#232525] border border-gray-700/50 rounded-xl overflow-hidden hover:border-gray-600 transition-colors duration-300 group"
+              onClick={() => navigate(`/weblog/${post.id}`)}
+              className="bg-[#232525] border border-gray-700/50 rounded-xl overflow-hidden hover:border-gray-600 transition-colors duration-300 group cursor-pointer"
             >
               <div className="h-48 overflow-hidden">
                 <img
