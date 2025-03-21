@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { projects } from "@/data/works";
 import { Dispatch, SetStateAction, useState } from "react";
+import { NavLink } from "react-router";
 
 // Category filter component with corrected types
 // Category filter component with corrected types
@@ -104,9 +105,9 @@ export function Card({
       className="bg-[#202222] border border-gray-700 rounded-lg shadow-lg hover:shadow-xl hover:border-gray-500 transition-all duration-300 ease-in-out h-full group"
     >
       {link ? (
-        <a href={link} className="block h-full">
+        <NavLink to={link} className="block h-full">
           <CardContent />
-        </a>
+        </NavLink>
       ) : (
         <CardContent />
       )}
