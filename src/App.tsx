@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import HomePage from "./pages/home";
 import WorkPage from "./pages/work";
+import WorkIdPage from "./pages/work/id";
 import WebLogPage from "./pages/weblog";
 import Layout from "./layout";
 import NonExistPage from "./pages/error";
@@ -22,6 +23,14 @@ function App() {
           element={
             <Layout>
               <WorkPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/work/:id"
+          element={
+            <Layout>
+              <WorkIdPage />
             </Layout>
           }
         />

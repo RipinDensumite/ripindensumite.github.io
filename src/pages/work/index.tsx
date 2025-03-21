@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { projects } from "@/data/works";
 
 export function Card({
   title,
@@ -70,36 +71,6 @@ export function Card({
 }
 
 export default function WorkPage() {
-  const projects = [
-    {
-      title: "Marketing And Management System (MAMS)",
-      description:
-        "Web-based marketing and management system to streamline marketing efforts for staff and enhancing their ability to attract visitors and access materials efficiently.",
-      imgSrc:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?fm=jpg&q=80&w=3000",
-      link: "https://mams.site/",
-      category: "Web Application",
-    },
-    {
-      title: "PharmaGains",
-      description:
-        "Simple shopping cart system made during web development course. It features user authentication, product management, and order processing.",
-      imgSrc:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?fm=jpg&q=80&w=3000",
-      link: "https://github.com/RipinDensumite/PharmaGains",
-      category: "Web Application",
-    },
-    {
-      title: "KUDO QUIZ",
-      description:
-        "An interactive quiz application in C featuring user authentication, administrative controls for quiz management, and automated scoring system.",
-      imgSrc:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?fm=jpg&q=80&w=3000",
-      link: "https://github.com/RipinDensumite/KUDO-QUIZ",
-      category: "Terminal Software",
-    },
-  ];
-
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -124,7 +95,8 @@ export default function WorkPage() {
             title={project.title}
             description={project.description}
             imgSrc={project.imgSrc}
-            link={project.link}
+            link={`/work/${project.id}`}
+            // link={project.link}
             category={project.category}
           />
         ))}
