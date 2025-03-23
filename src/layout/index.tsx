@@ -253,6 +253,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Profile section */}
           <div className="relative mx-auto mt-6 mb-8">
             <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 0 15px rgba(255, 255, 255, 0.15)",
@@ -263,15 +265,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               alt="Profile"
             />
             <motion.h2
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
               className="text-center mt-4 font-medium text-lg text-gray-200"
             >
               Ripin Densumite
             </motion.h2>
-            <p className="text-center text-xs text-gray-400 mt-1">
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
+              className="text-center text-xs text-gray-400 mt-1"
+            >
               Software Engineer
-            </p>
+            </motion.p>
           </div>
 
           {/* Divider */}
