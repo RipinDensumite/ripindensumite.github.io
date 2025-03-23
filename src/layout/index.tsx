@@ -249,7 +249,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </AnimatePresence>
 
         {/* Desktop Navigation */}
-        <nav className="w-64 max-w-64 hidden md:flex flex-col fixed left-0 top-0 h-full p-6 rounded-r-2xl text-white border-r border-gray-500/30 shadow-lg">
+        <motion.nav
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+          className="w-64 max-w-64 hidden md:flex flex-col fixed left-0 top-0 h-full p-6 rounded-r-2xl text-white border-r border-gray-500/30 shadow-lg"
+        >
           {/* Profile section */}
           <div className="relative mx-auto mt-6 mb-8">
             <motion.img
@@ -426,10 +431,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </motion.a>
             </motion.div>
           </div>
-        </nav>
+        </motion.nav>
 
         <div className="min-h-[100dvh] md:pl-64 md:mx-3 w-full flex items-center justify-center">
-          <div className="bg-[#191a1a] rounded-xl min-h-[100dvh] md:min-h-[98dvh] md:max-h-[98dvh] w-full md:border-2 border-[#434343] overflow-y-scroll overflow-x-hidden">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.4 }}
+            className="bg-[#191a1a] rounded-xl min-h-[100dvh] md:min-h-[98dvh] md:max-h-[98dvh] w-full md:border-2 border-[#434343] overflow-y-scroll overflow-x-hidden"
+          >
             <nav className="fixed md:sticky flex items-center top-0 left-0 right-0 h-16 rounded-t-xl bg-[#191a1a] border-b-2 border-[#2b2d2d] z-10">
               {/* Mobile Menu Button */}
               <motion.button
@@ -519,7 +529,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </motion.div>
               </motion.main>
             </AnimatePresence>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
