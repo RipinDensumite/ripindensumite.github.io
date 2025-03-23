@@ -133,6 +133,25 @@ export default function WorkPage() {
     return matchesCategory && matchesSearch;
   });
 
+  // Group projects by year
+  const projectsByYear = filteredProjects.reduce((acc, project) => {
+    // Extract year from project (assuming each project has a year property)
+    // If your projects don't have a year property, you'll need to add it to your data model
+    const year = project.year || "Unknown";
+
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+
+    acc[year].push(project);
+    return acc;
+  }, {} as Record<string, typeof projects>);
+
+  // Get years and sort them in descending order
+  const sortedYears = Object.keys(projectsByYear).sort((a, b) =>
+    b.localeCompare(a, undefined, { numeric: true })
+  );
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -194,23 +213,32 @@ export default function WorkPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="space-y-12"
         >
-          {filteredProjects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
-            >
-              <Card
-                title={project.title}
-                description={project.description}
-                imgSrc={project.imgSrc}
-                link={`/work/${project.id}`}
-                category={project.category}
-              />
-            </motion.div>
+          {sortedYears.map((year) => (
+            <div key={year}>
+              <h2 className="text-2xl font-bold text-slate-300 mb-6 border-b border-gray-700 pb-2">
+                {year}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {projectsByYear[year].map((project, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                  >
+                    <Card
+                      title={project.title}
+                      description={project.description}
+                      imgSrc={project.imgSrc}
+                      link={`/work/${project.id}`}
+                      category={project.category}
+                    />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
           ))}
         </motion.div>
       ) : (
