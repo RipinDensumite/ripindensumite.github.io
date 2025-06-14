@@ -89,7 +89,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ delay: 0.1, duration: 0.3 }}
-                    src="https://avatars.githubusercontent.com/u/52118329?v=4"
+                    src="/profile/profile 3 [edited].png"
                     className="relative size-24 select-none rounded-full mx-auto object-cover ring-2 ring-white/10 shadow-md"
                     alt="Profile"
                   />
@@ -265,7 +265,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 boxShadow: "0 0 15px rgba(255, 255, 255, 0.15)",
               }}
               transition={{ type: "spring", stiffness: 300 }}
-              src="https://avatars.githubusercontent.com/u/52118329?v=4"
+              src="/profile/profile 3 [edited].png"
               className="relative size-32 select-none rounded-full mx-auto object-cover ring-2 ring-white/10 shadow-md"
               alt="Profile"
             />
