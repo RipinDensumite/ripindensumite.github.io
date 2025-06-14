@@ -63,7 +63,7 @@ export const projects: ProjectType[] = [
     fullDescription:
       "ThinWatcher is a comprehensive monitoring solution for thin client environments. Designed for IT administrators, it provides real-time visibility into client sessions, and connection status. The application features a responsive dashboard with session metrics. Built with modern web technologies, ThinWatcher helps organizations efficiently manage their thin client infrastructure with minimal overhead.",
     imgSrc: "/work/thinwatcher.png",
-    link: "https://thinwatcher.vercel.app/",
+    link: "https://thinwatcher.ripin.xyz",
     github: "https://github.com/RipinDensumite/thinwatcher",
     category: "Web Application",
     technologies: ["Vite.js", "React", "Tailwind CSS", "Node.js", "Express.js"],
